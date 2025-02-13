@@ -1,5 +1,5 @@
+import 'package:capstoneproject/screens/auth/login.dart';
 import 'package:flutter/material.dart';
-import 'login_Screen.dart';
 
 class SignupScreen extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();

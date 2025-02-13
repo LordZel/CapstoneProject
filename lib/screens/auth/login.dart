@@ -1,6 +1,6 @@
+import 'package:capstoneproject/screens/dashboard.dart';
+import 'package:capstoneproject/screens/auth/signup.dart';
 import 'package:flutter/material.dart';
-import 'signup_Screen.dart';
-import 'home_Screen.dart';
 
 class LoginScreen extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
@@ -9,7 +9,6 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
@@ -44,7 +43,7 @@ class LoginScreen extends StatelessWidget {
                 // TODO: Implement login functionality later
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                  MaterialPageRoute(builder: (context) => Dashboard()),
                 );
               },
               child: Text("Login", style: TextStyle(fontSize: 18)),
